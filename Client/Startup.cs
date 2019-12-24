@@ -57,7 +57,7 @@ namespace TestApi
 
             // app.UseMiddleware<AuthMiddleware>();
 
-            app.UseAuthentication();
+            app.UseAuthentication();//must before app.UseMvc()
 
             app.UseMvc();
         }
